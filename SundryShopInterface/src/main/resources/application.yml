@@ -1,0 +1,5 @@
+api:
+  name: 'SundryShop'
+server:
+  servlet:
+    context-path: '/sundryshop'
