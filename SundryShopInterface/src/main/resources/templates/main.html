@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title th:text="${title}">E-Commerce</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/dark-mode.css" id="dark-mode-stylesheet" disabled>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/mockup.js"></script>
+</head>
+<body>
+<!-- Top Navbar -->
+<nav th:replace="~{fragment/mockupFrag::tl_mock_navbar}"></nav>
+
+<!-- Carousel Banner -->
+<div th:replace="~{fragment/utilitiesFrag::tl_util_carrusel}"></div>
+
+<!-- Footer -->
+<footer th:replace="~{fragment/mockupFrag::tl_mock_footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<body>
+<nav th:fragment="tl_mock_navbar" class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Submenu 1</a>
+                    <a class="dropdown-item" href="#">Submenu 2</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/session/sign-in}">Sign In</a>
+            </li>
+        </ul>
+        <ul>
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </ul>
+    </div>
+</nav>
+
+<footer th:fragment="tl_mock_footer" class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contact Information</h5>
+                <p>123 Main Street, Anytown, USA</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Twitter</a> | <a href="#"
+                                                                                                              class="text-white">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
